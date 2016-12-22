@@ -1,0 +1,148 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        meta(name='description', content='')
+        meta(name='author', content='')
+        title 1 Col Portfolio - Start Bootstrap Template
+        // Bootstrap Core CSS
+        link(href='/project/css/bootstrap.min.css', rel='stylesheet')
+        // Custom CSS
+        link(href='/project/css/1-col-portfolio.css', rel='stylesheet')
+        link(rel='stylesheet', href='/stylesheets/styles.css', type='text/css')
+
+        // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+        // WARNING: Respond.js doesn't work if you view the page via file://
+        //if lt IE 9
+          script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+          script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    body
+        // Navigation
+        nav.navbar.navbar-static-top.navbar-light.bg-faded
+            a.navbar-brand(href='#') Zirak
+            ul.nav.navbar-nav
+                li.nav-item.active
+                    a.nav-link(href='#')
+                        | Home
+                        span.sr-only (current)
+                li.nav-item
+                    a.nav-link(href='/projects') Projects
+                li.nav-item
+                    a.nav-link(href='/resume') Resumé
+                li.nav-item
+                    a.nav-link(href='/misc') Miscellaneous
+        .container
+            // Page Heading
+            .row
+                .col-lg-12
+                    h1.page-header
+                        | Research Projects
+            // /.row
+            // Project One
+            .row
+                .col-md-7
+                    a(href='#')
+                        img.img-responsive(src='/images/sproj.png', alt='')
+                .col-md-5
+                    h3 Project One
+                    h4 GRIZZLY: A Framework to create signatures and launch Monitors using Virtual Machine Introspection
+                    p
+                        | Modern malwares are growing powerful and more sophisticated day by day. It has also been very common to see these malwares compromise the security tools along with the machine. The host based IDS tools are, therefore, not able to satisfy the security requirement of today’s computer systems. Moreover, they are ineffective to detect rootkits, sophisticated keyloggers and network based attacks. The problem of host based security tools is that they run inside the same hosts they are protecting which makes them directly exposed to malware. The traditional solution to this approach has been to move the security system into network to provide isolation. But, this comes at the cost of low visibility of the OS state of the host machine. Hence, this gives attacker more room to play their tricks and compromise the system.
+
+                        |Drawbacks of Host based as well as Network based Intrusion Detection System has brought IDS mechanism built on Virtual Machine Introspection as a popular framework. This project aimed to design a framework using Virtual Machine Introspection to protect Virtual Machines running on a physical machine. Virtual machine introspection (VMI) is a technique for externally monitoring the runtime state of a system-level virtual machine. Monitors can be placed in another virtual machine, within the hypervisor, or within any other part of the virtualization architecture. Such an approach helps to shield the Intrusion Detection System even if the Virtual Machine gets compromised. At the same time it allows us to view and control the virtual machine from outside of VM. Security policy enforcement and threat detection is an essential goal of Virtual Machine introspection.
+                        | In my senior year project we have researched, designed and implemented Grizzly which is an automated malware detection framework based up virtual machine introspection. VMI gives us the ability to gather accurate information from the outside the system due to which it makes uses of the advantages of both HIDS and NIDS while avoiding their disadvantages. Grizzly provides automated signature based malware detection based upon VMI where the signature can be defined in a high level language and hence the complexity is reduced as it is delegated to the framework. We believe that such frameworks can be deployed as as service in public clouds for malware detection using VMI.
+
+                    a.btn.btn-primary(href='#')
+                        | View Project
+                        span.glyphicon.glyphicon-chevron-right
+            // /.row
+            hr
+            // Project Two
+            .row
+                .col-md-7
+                    a(href='#')
+                        img.img-responsive(src='/images/mnemonics.jpg', alt='')
+                .col-md-5
+                    h3 Project Two
+                    h4 Mnemorizer: Learning And Memorizing Words Using Mnemonics
+                    p
+                        |'Recalling facts and figures from long term memory remains
+
+                        |a key component of contemporary education. Standardized
+
+                        |testing often has a vocabulary component which requires test
+
+                        |takers to memorize hundreds of words. This can be extremely
+
+                        |problematic if the aforementioned words are not in the users
+
+                        |native language. We introduce Mnemorizer, a vocabulary
+
+                        |learning solution which enables quick memorisation of com-
+                        |plex vocabulary by employing the use of mnemonics and na-
+                        |tive language word translations. Mnemorizer allows users
+
+                        |to rate mnemonics in terms of their helpfulness in assisting
+
+                        |memorisation and add their own custom mnemonics thus en-
+                        |abling a very efficient memory recall aid.
+                        |We built an Android Application to conduct user studies and evaluate the proposed approach.
+
+
+                    a.btn.btn-primary(href='#')
+                        | View Project
+                        span.glyphicon.glyphicon-chevron-right
+            // /.row
+            hr
+            // Project Three
+            .row
+                .col-md-7
+                    a(href='#')
+                        img.img-responsive(src='/images/p4.png', alt='')
+                .col-md-5
+                    h3 Project Three
+                    h4 D4-Cache: Easy implementation of DNS caching on programmable hardware
+                    p
+                        | D4-Cache offloads DNS Caching onto programmable switches which can then be dynamically pushed into the network wherever needed to accelerate the local DNS servers. This makes the DNS look-up faster and the DNS architecture more adaptable. D4-Cache is implemented using the P4 language which is used to program the network data-plane. This paper de- scribes the implementation of dns-caching inside the network data-plane. D4-Cache working doesn’t sig- nificantly effect the normal forwarding performance of the switch, making caching on switches a viable solution. This work is also a stepping stone towards achieving Caching as a Data-Plane service.
+
+                    a.btn.btn-primary(href='#')
+                        | View Project
+                        span.glyphicon.glyphicon-chevron-right
+            // /.row
+            hr
+            // Project Four
+            // /.row
+            hr
+            // Pagination
+            .row.text-center
+                .col-lg-12
+                    ul.pagination
+                        li
+                            a(href='#') «
+                        li.active
+                            a(href='#') 1
+                        li
+                            a(href='#') 2
+                        li
+                            a(href='#') 3
+                        li
+                            a(href='#') 4
+                        li
+                            a(href='#') 5
+                        li
+                            a(href='#') »
+            // /.row
+            hr
+            // Footer
+            footer
+                .row
+                    .col-lg-12
+                        p
+                // /.row
+        // /.container
+        // jQuery
+        script(src='/project/js/jquery.js')
+        // Bootstrap Core JavaScript
+        script(src='/project/js/bootstrap.min.js')
