@@ -7,7 +7,7 @@
 const http = require('http')
 const jade = require('jade')
 const fs = require('fs')
-const EIGHTK = 8000;
+const EIGHTK = process.env.PORT || 8000;
 const express = require('express')
 var router = express.Router();
 var path = __dirname + '/views/';
