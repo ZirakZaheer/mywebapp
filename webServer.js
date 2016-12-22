@@ -53,9 +53,9 @@ app.use(express.static(__dirname + '/public'));
 
 const io = require('socket.io').listen(app.listen(EIGHTK));
 
-// io.on('connection', (socket) => {
-//     "use strict";
-//     // socket.on('send', (data) => {
-//     //     socket.emit('message', 'afdfasgf')
-//     // })
-// })
+io.on('connection', (socket) => {
+    "use strict";
+    // socket.on('send', (data) => {
+    //     socket.emit('message', 'afdfasgf')
+    // })
+})
